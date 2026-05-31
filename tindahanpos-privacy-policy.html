@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - TindahanPOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #00d4ff;
+            --secondary-color: #0066ff;
+            --accent-color: #00ffff;
+            --neon-blue: #00d4ff;
+            --neon-cyan: #00ffff;
+            --dark-bg: #0a0a0f;
+            --darker-bg: #050507;
+            --text-primary: #ffffff;
+            --text-secondary: #b3d9ff;
+            --bg-primary: #0f0f1a;
+            --bg-secondary: #1a1a2e;
+            --bg-gradient: linear-gradient(135deg, #050507 0%, #0a0a0f 50%, #1a1a2e 100%);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--dark-bg);
+            padding: 0;
+            margin: 0;
+        }
+
+        .header {
+            background: var(--bg-gradient);
+            padding: 60px 20px 40px;
+            text-align: center;
+            border-bottom: 2px solid var(--neon-cyan);
+            box-shadow: 0 5px 20px rgba(0, 212, 255, 0.2);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--neon-cyan);
+            text-shadow:
+                0 0 10px var(--neon-cyan),
+                0 0 20px var(--neon-cyan),
+                0 0 40px var(--neon-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .header .app-name {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .header .dates {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            color: var(--text-secondary);
+            padding: 30px;
+            background: var(--bg-primary);
+            border-radius: 16px;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+
+        .section {
+            margin-bottom: 40px;
+            background: var(--bg-primary);
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            box-shadow: 0 10px 25px rgba(0, 212, 255, 0.1);
+        }
+
+        .section h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--neon-cyan);
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px var(--neon-cyan);
+        }
+
+        .section h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            margin-top: 25px;
+        }
+
+        .section h3:first-of-type {
+            margin-top: 0;
+        }
+
+        .section p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .section ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .section li {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .section li:last-child {
+            margin-bottom: 0;
+        }
+
+        .section a {
+            color: var(--neon-cyan);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .section a:hover {
+            color: var(--text-primary);
+            text-shadow: 0 0 10px var(--neon-cyan);
+        }
+
+        .no-collect-box {
+            background: rgba(0, 212, 255, 0.05);
+            border: 1px solid rgba(0, 212, 255, 0.4);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-top: 10px;
+        }
+
+        .no-collect-box ul {
+            margin-left: 0;
+            list-style: none;
+            margin-bottom: 0;
+        }
+
+        .no-collect-box li {
+            padding-left: 22px;
+            position: relative;
+            margin-bottom: 6px;
+        }
+
+        .no-collect-box li::before {
+            content: "✗";
+            position: absolute;
+            left: 0;
+            color: #ff6b6b;
+            font-weight: 700;
+        }
+
+        .contact-info {
+            background: var(--bg-gradient);
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            border: 2px solid var(--neon-cyan);
+            box-shadow: 0 10px 25px rgba(0, 212, 255, 0.3);
+            margin-top: 40px;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+
+        .contact-info p:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-info a {
+            color: var(--neon-cyan);
+            text-decoration: none;
+            font-weight: 600;
+            text-shadow: 0 0 10px var(--neon-cyan);
+            transition: all 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--text-primary);
+            text-shadow: 0 0 20px var(--neon-cyan);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #0066ff 0%, #00d4ff 50%, #00ffff 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 500;
+            margin-bottom: 30px;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 212, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .header .app-name {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 30px 15px;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .section h2 {
+                font-size: 1.4rem;
+            }
+
+            .intro, .section p, .section li {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Privacy Policy</h1>
+        <div class="app-name">TindahanPOS</div>
+        <div class="dates">
+            Effective Date: May 23, 2026<br>
+            Last Updated: May 30, 2026
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
+
+        <div class="intro">
+            This Privacy Policy describes how TindahanPOS ("we", "our", or "us") collects, uses, and protects your information when you use the TindahanPOS mobile application ("App"). By using TindahanPOS, you agree to the terms of this Privacy Policy.
+        </div>
+
+        <div class="section">
+            <h2>1. Information We Collect</h2>
+
+            <h3>A. Business Data You Enter</h3>
+            <p>When you use TindahanPOS, you may enter:</p>
+            <ul>
+                <li>Product names, prices, categories, and barcodes</li>
+                <li>Custom product photos (from your device gallery or camera)</li>
+                <li>Sales transaction records</li>
+                <li>Stall or business name and receipt tagline</li>
+            </ul>
+            <p>This data belongs to you. It is stored only on your device and is never uploaded to any server. We do not sell or share it with third parties.</p>
+
+            <h3>B. Product Photos</h3>
+            <p>When you upload or capture a product photo, the image is stored locally on your device only. Product photos are never uploaded to any server and are not accessible to us or any third party. If you uninstall the app or delete the app data, the photos are permanently removed.</p>
+
+            <h3>C. Camera Usage</h3>
+            <p>TindahanPOS uses your device camera for two purposes:</p>
+            <ul>
+                <li><strong>Product Photos</strong> — capturing photos of your products directly from within the Add Product screen.</li>
+                <li><strong>Barcode Scanner (Premium)</strong> — scanning product barcodes using your device camera. When a barcode is scanned, the barcode number may be sent to the Open Food Facts API (a public, free database) to look up the product name. See Section 7 for details on this third-party service.</li>
+            </ul>
+            <p>Camera access is used only while you are actively using these features. We do not capture or store images in the background.</p>
+
+            <h3>D. Bluetooth Usage</h3>
+            <p>TindahanPOS requests Bluetooth access to connect to ESC/POS thermal receipt printers (Premium feature). The App:</p>
+            <ul>
+                <li>Scans for paired Bluetooth devices on your phone</li>
+                <li>Connects to your selected printer to send receipt data</li>
+            </ul>
+            <p>We do not collect, store, or transmit Bluetooth device information. Printer setup (device name and MAC address) is saved locally on your device in app preferences only.</p>
+
+            <h3>E. In-App Purchase Information</h3>
+            <p>TindahanPOS offers a one-time lifetime Premium upgrade through Google Play Billing. When you make a purchase:</p>
+            <ul>
+                <li>The transaction is processed entirely by Google Play — we never see your payment card details</li>
+                <li>Your premium status is verified through Google Play's purchase verification and stored locally on your device</li>
+            </ul>
+            <p>Premium status is tied to your Google Play account. It is stored only on your device and is never sent to any external server.</p>
+
+            <h3>F. Data We Do NOT Collect</h3>
+            <div class="no-collect-box">
+                <ul>
+                    <li>We do not collect your location</li>
+                    <li>We do not access your contacts</li>
+                    <li>We do not collect payment card information</li>
+                    <li>We do not use advertising identifiers</li>
+                    <li>We do not upload your product photos to any server</li>
+                    <li>We do not sync your data to any cloud service</li>
+                    <li>We do not track you across other apps or websites</li>
+                    <li>We do not access your microphone</li>
+                    <li>We do not require an account to use the App</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. How We Use Your Information</h2>
+            <ul>
+                <li>To provide and operate the App entirely on your device</li>
+                <li>To look up product names via barcode (Open Food Facts API, Premium users)</li>
+                <li>To send receipt data to your Bluetooth printer (Premium users)</li>
+                <li>To verify and manage your Premium purchase status via Google Play</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>3. Data Storage &amp; Security</h2>
+
+            <h3>Local Storage Only</h3>
+            <p>All your business data is stored locally on your device using SQLite. Your data never leaves your device. Premium status and printer preferences are stored in app SharedPreferences on your device.</p>
+            <p>There is no cloud backend, no server, and no account system. You are in full control of your data at all times.</p>
+
+            <h3>Security Measures</h3>
+            <ul>
+                <li>All data is stored on-device — no external transmission of business data</li>
+                <li>Premium purchase verification uses Google Play's secure billing API</li>
+                <li>Barcode lookups send only the barcode number (no personal data)</li>
+                <li>We apply the principle of least privilege for all data access</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>4. PDF Export &amp; Usage Limits</h2>
+            <p>Free plan users are limited to 5 PDF exports per calendar month. The export count is tracked locally on your device. This counter resets on the first day of each month. Premium users have unlimited PDF exports.</p>
+        </div>
+
+        <div class="section">
+            <h2>5. Data Sharing</h2>
+            <p>We do not sell, trade, or rent your personal information to third parties.</p>
+            <p>We may share data only with:</p>
+            <ul>
+                <li>Open Food Facts API (barcode number only, for product name lookup — Premium users who use the barcode scanner)</li>
+                <li>Google Play Billing (for in-app purchase verification)</li>
+                <li>Law enforcement if required by applicable law</li>
+            </ul>
+            <p>We use no third-party advertising SDKs or analytics tools.</p>
+        </div>
+
+        <div class="section">
+            <h2>6. Data Retention</h2>
+            <ul>
+                <li>All data is retained on your device until you clear it or uninstall the App</li>
+                <li>Clearing local data: Settings → Clear Local Data</li>
+                <li>Premium status: Stored locally; tied to your Google Play purchase</li>
+                <li>Uninstalling the App permanently removes all local data from your device</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>7. Third-Party Services</h2>
+            <p>TindahanPOS uses the following third-party services:</p>
+            <ul>
+                <li>
+                    <strong>Google Play Billing</strong> — in-app purchase processing for Premium.
+                    Review Google's Privacy Policy at <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
+                </li>
+                <li>
+                    <strong>Open Food Facts</strong> (world.openfoodfacts.org) — free public barcode product database. When you scan a barcode, the barcode number is sent to this API to retrieve the product name. No personal information is transmitted.
+                    Open Food Facts Privacy Policy: <a href="https://world.openfoodfacts.org/privacy" target="_blank">world.openfoodfacts.org/privacy</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>8. Your Rights &amp; Choices</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access your data (all data is visible within the App)</li>
+                <li>Export your data (Settings → Export Backup)</li>
+                <li>Delete your local data (Settings → Clear Local Data)</li>
+                <li>Deny camera permission (disables product photo capture and barcode scanning)</li>
+                <li>Deny Bluetooth permission (disables thermal printer connection)</li>
+            </ul>
+            <p>Since all data is local, you have complete control at all times.</p>
+        </div>
+
+        <div class="section">
+            <h2>9. Children's Privacy</h2>
+            <p>TindahanPOS is a business productivity app intended for use by individuals who operate or assist with small businesses. We do not knowingly collect personal information from children under 13. Since the App does not collect any personal information beyond what Google Play handles for billing, there is minimal privacy risk for any age group.</p>
+        </div>
+
+        <div class="section">
+            <h2>10. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by updating the "Last Updated" date above. Continued use of the App after changes constitutes acceptance of the revised policy.</p>
+        </div>
+
+        <div class="contact-info">
+            <p>If you have questions or concerns about this Privacy Policy or your data, please contact us at:</p>
+            <a href="mailto:eyonsupp@gmail.com">eyonsupp@gmail.com</a>
+            <p style="margin-top: 15px; font-size: 0.95rem;">We will respond to your inquiry within 30 days.</p>
+        </div>
+    </div>
+</body>
+</html>
